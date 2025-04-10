@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Demo</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>HTML5 Features</h2>
+        <ol type="I">
+            <li>Improved semantics with tags like <code>header</code> and <code>footer</code></li>
+            <li>Native support for <code>audio</code> and <code>video</code></li>
+            <li>Advanced form validation</li>
+            <li>Responsive design capabilities</li>
+        </ol>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+        <h2>Beautiful Landscape</h2>
+        <figure>
+            <img src="https://images.pexels.com/photos/29443096/pexels-photo-29443096/free-photo-of-dramatic-sunrise-aerial-view-of-foggy-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful Landscape" width="600">
+            <figcaption>Photo by Christian Angel from Pexels</figcaption>
+        </figure>
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contacts Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>432 Main St</td>
+                    <td>+2547********</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Bellevue</td>
+                    <td>+25471*******</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Bellevue</td>
+                    <td>+25471*******</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Bellevue</td>
+                    <td>+25471*******</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Bellevue</td>
+                    <td>+25471*******</td>
+                    <td>jane@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form novalidate>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" 
+                    placeholder="John Doe" 
+                    pattern="[A-Za-z ]{2,}" 
+                    required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" 
+                    placeholder="user@example.com" 
+                    required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                    placeholder="••••••••" 
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" 
+                    title="Must contain at least 8 characters with uppercase, lowercase and number" 
+                    required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="KE">Kenya</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Preferred Contact Method:</p>
+                <label><input type="radio" name="contact" value="email" checked>Email</label>
+                <label><input type="radio" name="contact" value="phone">Phone</label>
+            </div>
+
+            <div>
+                <p>Terms & Conditions:</p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section>
+        <h2>Multimedia</h2>
+        <audio controls>
+            <source src="audio/sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="600" controls>
+            <source src="video/sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HTML5 Demo</p>
+    </footer>
+</body>
+</html>
